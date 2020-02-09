@@ -95,7 +95,12 @@
 			div.slide .foreground.iphone-black img,
 			div.slide .foreground.iphone-black iframe,
 			div.slide .foreground.iphone-white img,
-			div.slide .foreground.iphone-white iframe { width: 133px; height: 200px; top: 55px; left: 48px; }
+			div.slide .foreground.iphone-white iframe { 
+				width: 178px;
+			    height: 255px;
+			    top: 40px;
+			    left: 18px;
+			 }
 		/* Blackberry */
 		div.slide .background.blackberry { -webkit-background-size: 220px 289px; background-size: 220px 289px; }
 			div.slide .background.blackberry img,
