@@ -7,7 +7,7 @@ function hello(){
 
 	console.log('you');
 
-	console.log(akj);
+	console.log(akj13);
 }
 
 
