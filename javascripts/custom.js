@@ -7,7 +7,7 @@ function hello(){
 
 	console.log('you');
 
-	console.log(dada1234);
+	console.log(kyahalh);
 }
 
 
