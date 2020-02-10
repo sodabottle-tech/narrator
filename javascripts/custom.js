@@ -7,7 +7,7 @@ function hello(){
 
 	console.log('you');
 
-	console.log(puneettesting);
+	console.log(puneet1234);
 }
 
 
