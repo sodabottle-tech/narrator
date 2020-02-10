@@ -7,7 +7,7 @@ function hello(){
 
 	console.log('you');
 
-	console.log(kesehotum);
+	console.log(puneettesting);
 }
 
 
