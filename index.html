@@ -55,6 +55,13 @@
   <meta property="article:published_time" content="2018-04-05T19:09:44+00:00" />
   <meta property="article:modified_time" content="2019-12-17T19:37:48+00:00" />
 
+  <style type="text/css">
+    #chatOpen{
+      visibility: hidden;
+      height: 0;
+    }
+  </style>
+
   <script type="text/javascript">
 
     function getParameterByName(name, url) {
@@ -76,29 +83,29 @@
       }
     });
 
-    function ravenOnload() {
-        Sentry.init({
-          dsn: 'https://4f50afdda1724066bf2588e00fd2376d@sentry.io/2103023',
-          ignoreUrls: [
-            "https://www.google.com/recaptcha/api.js",
-            "https://www.gstatic.com/"
-          ],
-          enableInExpoDevelopment: true,
-          release: 'release12',
-          ignoreErrors: [
-          ]
-        });
-        Sentry.configureScope((scope) => {});
-      }
+    // function ravenOnload() {
+    //     Sentry.init({
+    //       dsn: 'https://4f50afdda1724066bf2588e00fd2376d@sentry.io/2103023',
+    //       ignoreUrls: [
+    //         "https://www.google.com/recaptcha/api.js",
+    //         "https://www.gstatic.com/"
+    //       ],
+    //       enableInExpoDevelopment: true,
+    //       release: 'release12',
+    //       ignoreErrors: [
+    //       ]
+    //     });
+    //     Sentry.configureScope((scope) => {});
+    //   }
 
-    (function(s, o, g, rav, m){
-        m = s.getElementsByTagName(o)[0],
-        rav = s.createElement(o);
-        rav.async = 1;
-        rav.src = g;
-        rav.onload = rav.onreadystatechange = ravenOnload;
-        m.parentNode.insertBefore(rav, m);
-      })(document,'script','//browser.sentry-cdn.com/5.7.1/bundle.min.js')
+    // (function(s, o, g, rav, m){
+    //     m = s.getElementsByTagName(o)[0],
+    //     rav = s.createElement(o);
+    //     rav.async = 1;
+    //     rav.src = g;
+    //     rav.onload = rav.onreadystatechange = ravenOnload;
+    //     m.parentNode.insertBefore(rav, m);
+    //   })(document,'script','//browser.sentry-cdn.com/5.7.1/bundle.min.js')
 
   </script>
 
@@ -110,7 +117,7 @@
   <!-- Start Wrapper -->
   <div id="page_wrapper">
 
-  <a href="" id="chatOpen">click here</a>>
+  <a href="" id="chatOpen">click here</a>
     
   <!-- Start Header -->
   <header>
