@@ -56,9 +56,26 @@
   <meta property="article:modified_time" content="2019-12-17T19:37:48+00:00" />
 
   <style type="text/css">
+    .chat-bar {
+      display: none;
+      position: fixed;
+      background: #1188c0;
+      color: #ffffff;
+      padding: 20px 0;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      font-size: 20px;
+      z-index: 1000;
+      border-top: 1px solid #3a81a1;
+    }
+
     #chatOpen{
-      visibility: hidden;
-      height: 0;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      padding: 5px 10px;
+      border-radius: 5px;
     }
   </style>
 
@@ -74,11 +91,13 @@
          return decodeURIComponent(results[2].replace(/\+/g, " "));
      }
 
-    var thequerystring = getParameterByName("startChat");
+    var thequerystring = getParameterByName("chatId");
 
     $(document).ready(function(){
       if(thequerystring) {
-        $("#chatOpen").attr("href", thequerystring);
+        $("#chatOpen").attr("href", "narratorapp://?chatId=" + thequerystring);
+        $(".chat-bar").show();
+
         $("#chatOpen")[0].click();
       }
     });
@@ -117,7 +136,10 @@
   <!-- Start Wrapper -->
   <div id="page_wrapper">
 
-  <a href="" id="chatOpen">click here</a>
+
+  <div class="chat-bar hide">
+    <a href="" id="chatOpen">Click here to start your chat</a>
+  </div>
     
   <!-- Start Header -->
   <header>
