@@ -94,12 +94,15 @@
     var thequerystring = getParameterByName("chatId");
 
     $(document).ready(function(){
-      if(thequerystring) {
-        $("#chatOpen").attr("href", "narratorapp://?chatId=" + thequerystring);
+      // if(thequerystring) {
+        // $("#chatOpen").attr("href", "narratorapp://?chatId=" + thequerystring);
+
+        $("#chatOpen").attr("href", "exp://192.168.43.138:19000/--/?chatId=e31f7901-509b-4d69-931c-087987ad4d3a");
+
         $(".chat-bar").show();
 
-        $("#chatOpen")[0].click();
-      }
+        // $("#chatOpen")[0].click();
+      // }
     });
 
     // function ravenOnload() {
