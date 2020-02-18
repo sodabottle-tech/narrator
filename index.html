@@ -95,7 +95,7 @@
 
     $(document).ready(function(){
       if(thequerystring) {
-        $("#chatOpen").attr("href", "narratorapp://?chatId=" + thequerystring);
+        $("#chatOpen").attr("href", "narratorapp://chats?chatId=" + thequerystring);
         $(".chat-bar").show();
 
         $("#chatOpen")[0].click();
