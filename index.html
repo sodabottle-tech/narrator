@@ -102,29 +102,29 @@
       }
     });
 
-    // function ravenOnload() {
-    //     Sentry.init({
-    //       dsn: 'https://4f50afdda1724066bf2588e00fd2376d@sentry.io/2103023',
-    //       ignoreUrls: [
-    //         "https://www.google.com/recaptcha/api.js",
-    //         "https://www.gstatic.com/"
-    //       ],
-    //       enableInExpoDevelopment: true,
-    //       release: 'release12',
-    //       ignoreErrors: [
-    //       ]
-    //     });
-    //     Sentry.configureScope((scope) => {});
-    //   }
+    function ravenOnload() {
+        Sentry.init({
+          dsn: 'https://4f50afdda1724066bf2588e00fd2376d@sentry.io/2103023',
+          ignoreUrls: [
+            "https://www.google.com/recaptcha/api.js",
+            "https://www.gstatic.com/"
+          ],
+          enableInExpoDevelopment: true,
+          release: 'release1shul',
+          ignoreErrors: [
+          ]
+        });
+        Sentry.configureScope((scope) => {});
+      }
 
-    // (function(s, o, g, rav, m){
-    //     m = s.getElementsByTagName(o)[0],
-    //     rav = s.createElement(o);
-    //     rav.async = 1;
-    //     rav.src = g;
-    //     rav.onload = rav.onreadystatechange = ravenOnload;
-    //     m.parentNode.insertBefore(rav, m);
-    //   })(document,'script','//browser.sentry-cdn.com/5.7.1/bundle.min.js')
+    (function(s, o, g, rav, m){
+        m = s.getElementsByTagName(o)[0],
+        rav = s.createElement(o);
+        rav.async = 1;
+        rav.src = g;
+        rav.onload = rav.onreadystatechange = ravenOnload;
+        m.parentNode.insertBefore(rav, m);
+      })(document,'script','//browser.sentry-cdn.com/5.7.1/bundle.min.js')
 
   </script>
 
