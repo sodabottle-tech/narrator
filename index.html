@@ -166,6 +166,16 @@
     gtag('config', 'UA-156037716-1');
   </script>
 
+  <script>
+      $(document).ready(function (){
+          if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
+              window.location.href = 'https://play.google.com/store/apps/details?id=com.sodabottle.narratorApp';
+          }
+          if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
+              window.location.href = 'https://apps.apple.com/in/app/narrator-app/id1493401424';
+          }
+      });
+  </script>
 </head>
 <body>
   <!-- Start Wrapper -->
